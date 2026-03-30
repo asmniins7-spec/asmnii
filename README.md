@@ -1,22 +1,40 @@
 # Atari Games DQN Project
 
-This repository contains sample scripts for training Deep Q-Network agents for Atari-like games.
+## Task
 
-## Files
-- `atari_cartpole.py`: DQN for CartPole-v1
-- `atari_spaceinvaders.py`: DQN for SpaceInvadersNoFrameskip-v4
-- `atari_mspacman.py`: DQN for MsPacmanNoFrameskip-v4
-- `blog_post.md`: explanation of approach
+Build and train Deep Q-Network (DQN) agents for three environments:
+- CartPole-v1 (classic control)
+- SpaceInvadersNoFrameskip-v4 (Atari)
+- MsPacmanNoFrameskip-v4 (Atari)
 
-## Setup
+## Description
+
+This project demonstrates training DQN agents with Stable Baselines3 and Gymnasium (Atari) wrappers. The notebook `combined_atari_training.ipynb` contains the implementations for all three tasks, including training, evaluation, and saving models.
+
+## Installation
+
 ```bash
 python -m pip install --upgrade pip
 pip install gymnasium gymnasium[atari] stable-baselines3[extra] torch
 ```
 
-## Train
+## Usage
+
+Run the notebook in a Jupyter environment:
+
 ```bash
-python atari_cartpole.py
-python atari_spaceinvaders.py
-python atari_mspacman.py
+jupyter notebook Atari games.ipynb
 ```
+
+Inside the notebook, execute setup cells first, then train accordingly:
+
+- `train_cartpole(total_timesteps=100_000)`
+- `train_spaceinvaders(total_timesteps=400_000)`
+- `train_mspacman(total_timesteps=400_000)`
+
+For quick testing, reduce timesteps (example below):
+
+```python
+train_spaceinvaders(10_000)
+```
+
