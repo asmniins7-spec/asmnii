@@ -1,4 +1,4 @@
-https://manage.wix.com/dashboard/d20fda07-0ed9-491e-882c-65eb91c56cc4/blog/posts?status=%5B%7B%22id%22%3A%22PUBLISHED%22%2C%22name%22%3A%22Published%22%7D%5D&selectedColumns=col-thumbnail%2Ccol-post%2Ccol-published%2Ccol-comments%2Ccol-categories%2Ccol-tags%2Ccol-spacer
+https://dev.to/asmniinsds/atari-deep-q-network-projectatari-deep-q-network-project-45g6
 
 # Atari Deep Q-Network Project
 
